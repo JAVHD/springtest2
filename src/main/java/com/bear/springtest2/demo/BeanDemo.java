@@ -19,15 +19,13 @@ public class BeanDemo {
         ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
         ApplicationContext applicationContext = classPathXmlApplicationContext;
 
-        //获取bean对象
-        Person person = (Person) applicationContext.getBean("person"); //根据bean id 获取
-
-        person.setAge(18);
-        person.setName("bear");
-
-        System.out.println(person.toString());
-
-
+//        //获取bean对象
+//        Person person = (Person) applicationContext.getBean("person"); //根据bean id 获取
+//
+//        person.setAge(18);
+//        person.setName("bear");
+//
+//        System.out.println(person.toString());
 
     }
 }
