@@ -16,9 +16,8 @@ public class BeanDemo {
     public static void main(String[] args) {
 
         //加载配置文件
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
-
-        //applicationContext.get
+        ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ApplicationContext applicationContext = classPathXmlApplicationContext;
 
         //获取bean对象
         Person person = (Person) applicationContext.getBean("person"); //根据bean id 获取
