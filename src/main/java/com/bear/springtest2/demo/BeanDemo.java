@@ -24,6 +24,7 @@ public class BeanDemo {
         person.setAge(18);
         person.setName("bear");
 
+        System.out.println(person);
         System.out.println(person.toString());
 
     }
