@@ -19,23 +19,23 @@ import javax.jms.*;
 @Service
 public class ActiveMQProducerServiceImpl implements ActiveMQProducerService {
 
-//    @Resource
-    //private JmsTemplate jmsTemplate; //JMS 模版
-//
-//    @Resource(name = "queueDestination")
-//    Destination destination;
+    @Resource
+    private JmsTemplate jmsTemplate; //JMS 模版
+
+    @Resource(name = "queueDestination")
+    Destination destination;
 
     @Override
     public void sendMessage(final String message) {
         //jmsTemplate.send(destination->); //lambda
-//        jmsTemplate.send(destination, new MessageCreator() {
-//            @Override
-//            public Message createMessage(Session session) throws JMSException {
-//                TextMessage textMessage = session.createTextMessage(message);
-//                System.out.println("send message:" + textMessage.getText());
-//                return textMessage;
-//            }
-//        });
+        jmsTemplate.send(destination, new MessageCreator() {
+            @Override
+            public Message createMessage(Session session) throws JMSException {
+                TextMessage textMessage = session.createTextMessage(message);
+                System.out.println("send message:" + textMessage.getText());
+                return textMessage;
+            }
+        });
 
 
     }
