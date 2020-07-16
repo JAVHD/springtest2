@@ -7,7 +7,6 @@
     <import resource="common.xml"></import>
 
     <!-- 监听消息 -->
-
     <!-- 配置消息监听器 -->
     <bean id="consumerMessageListener" class="com.bear.springtest2.demo.ActiveMQConsumerDemo"/>
 
