@@ -19,11 +19,14 @@
         <constructor-arg value="queue"/>
     </bean>
 
-    <bean id="person" class="com.bear.springtest2.bean.Person"></bean>
+    <!-- 一个主题目的地，发布订阅模式 -->
+    <bean id="topicDestination" class="org.apache.activemq.command.ActiveMQTopic">
+        <constructor-arg value="topic"/>
+    </bean>
 
     <!-- 自动扫描-->
     <!--    <context:component-scan base-package="com.bear.springtest2.demo.service.impl"/>-->
-    <!--    <bean id="activeMQProducerService" class="com.bear.springtest2.demo.service.impl.ActiveMQProducerServiceImpl"></bean>-->
+
     <!-- 开启注解支持-->
     <context:annotation-config/>
 
