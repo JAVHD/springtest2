@@ -1,4 +1,4 @@
-package com.bear.springtest2.demo;
+package com.bear.springtest2.demo.service;
 
 /**
  * Created with IntelliJ IDEA.

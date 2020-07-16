@@ -8,7 +8,7 @@
 
     <!-- 监听消息 -->
     <!-- 配置消息监听器 -->
-    <bean id="consumerMessageListener" class="com.bear.springtest2.demo.ActiveMQConsumerDemo"/>
+    <bean id="consumerMessageListener" class="com.bear.springtest2.demo.service.ConsumerMessageListener"/>
 
     <!-- 配置消息监听容器 -->
     <bean id="jmsContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">

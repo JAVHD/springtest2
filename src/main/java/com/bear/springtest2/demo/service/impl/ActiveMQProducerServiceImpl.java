@@ -1,7 +1,6 @@
-package com.bear.springtest2.demo.impl;
+package com.bear.springtest2.demo.service.impl;
 
-import com.bear.springtest2.demo.ActiveMQProducerService;
-import org.springframework.context.annotation.Primary;
+import com.bear.springtest2.demo.service.ActiveMQProducerService;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Service;
@@ -36,7 +35,6 @@ public class ActiveMQProducerServiceImpl implements ActiveMQProducerService {
                 return textMessage;
             }
         });
-
 
     }
 }

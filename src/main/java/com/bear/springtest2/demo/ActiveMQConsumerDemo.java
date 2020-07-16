@@ -13,5 +13,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class ActiveMQConsumerDemo {
     public static void main(String[] args) { //ClassPathXmlApplicationContext
 
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("consumer.xml");
+
     }
 }

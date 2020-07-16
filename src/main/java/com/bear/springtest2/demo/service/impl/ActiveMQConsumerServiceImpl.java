@@ -1,6 +1,6 @@
-package com.bear.springtest2.demo.impl;
+package com.bear.springtest2.demo.service.impl;
 
-import com.bear.springtest2.demo.ActiveMQConsumerService;
+import com.bear.springtest2.demo.service.ActiveMQConsumerService;
 import org.springframework.stereotype.Service;
 
 /**
