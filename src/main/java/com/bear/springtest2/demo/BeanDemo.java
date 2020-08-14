@@ -28,4 +28,5 @@ public class BeanDemo {
         System.out.println(person.toString());
 
     }
+
 }
