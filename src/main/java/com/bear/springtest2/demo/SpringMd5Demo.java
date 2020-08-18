@@ -21,5 +21,9 @@ public class SpringMd5Demo {
 
         String encryptPassword2 = DigestUtils.md5DigestAsHex(encryptPassword1.getBytes());
         System.out.println(encryptPassword2);
+
+        String encryptPassword3 = DigestUtils.md5DigestAsHex((DigestUtils.md5DigestAsHex((password + salt).getBytes())).getBytes());
+        System.out.println(encryptPassword3);
+
     }
 }
