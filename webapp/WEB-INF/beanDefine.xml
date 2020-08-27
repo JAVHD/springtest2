@@ -4,12 +4,12 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!--    <bean id="man" class="com.bear.springtest2.bean.Man">-->
-    <!--        <property name="district" value="hubei"></property>-->
-    <!--        <property name="height" value="1.80f"></property>-->
-    <!--    </bean>-->
-
     <context:component-scan base-package="com.bear.springtest2.config"></context:component-scan>
+
+    <bean id="man" class="com.bear.springtest2.bean.Man">
+        <property name="district" value="hubei"></property>
+        <property name="height" value="1.80f"></property>
+    </bean>
 
 
 </beans>

@@ -9,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * Created with IntelliJ IDEA.
  * User: bear
  * Date: 2020/8/27 下午3:42
- * Description: xml bean注入与注解注入对比
+ * Description: xml bean注入与注解注入对比 优先注入xml
  */
 
 public class BeanInjectXmlCompareAnnotationDefineDemo {
